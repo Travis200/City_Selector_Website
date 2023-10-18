@@ -1,6 +1,6 @@
 function Message () {
     // JSX
-const name = 'Travis';
+    const name = 'Travis';
     if (name)
         return <h1>Hello {name}</h1>
     else
