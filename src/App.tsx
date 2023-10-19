@@ -7,7 +7,11 @@ const App = () => {
 
   return (
     <div>
-      {alertVisible && <Alert>You presssed the button</Alert>}
+      {alertVisible && (
+        <Alert onClose={() => setAlertVisible(false)}>
+          You presssed the button
+        </Alert>
+      )}
       <Button onClick={() => setAlertVisible(true)}>Counter: </Button>
     </div>
   );
